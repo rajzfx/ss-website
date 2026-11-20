@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachin Systems — The Flight of Reclaimed Technology | B2B Wireless Refurbishment</title>
+  <meta name="description" content="Inspired by modern 3D minimalism. Carrier auction direct sourcing from AT&T, Verizon, and T-Mobile. Precision cleanroom hardware refurbishment in Dubai for global B2B distributors.">
+  
+  <!-- Google Fonts: Playfair Display (Atmos-style Didone Serif) & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css?v=3.0">
+  <link rel="icon" type="image/x-icon" href="assets/images/SachinNewLogo-Final.ico">
+</head>
+<body>
+
+  <!-- Film Grain Overlay (Tactile non-digital texture) -->
+  <div class="film-grain-overlay"></div>
+
+  <!-- Full-Screen 3D Background Canvas -->
+  <canvas id="webgl-background-canvas"></canvas>
+
+  <!-- ==========================================================================
+       FIXED TOP & BOTTOM HUD BARS (SAFARI-OPTIMIZED FLEXBOX ARCHITECTURE)
+       ========================================================================== -->
+  <!-- Top Fixed Bar: Brand on Left, Actions on Right -->
+  <header class="hud-top-bar" style="position: fixed; top: 0; left: 0; right: 0; width: 100%; box-sizing: border-box; padding: 1.25rem clamp(1.5rem, 3.5vw, 3rem); display: flex; justify-content: space-between; align-items: center; z-index: 1000; pointer-events: none;">
+    <a href="#chapter-01" class="hud-brand-link" aria-label="Sachin Systems Home" style="display: flex; align-items: center; gap: 0.9rem; text-decoration: none; pointer-events: auto;">
+      <img src="assets/images/sachin-icon-transparent.png" alt="Sachin Systems Logo" class="hud-logo-img" style="height: 38px; width: 38px; max-height: 38px; max-width: 38px; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0, 146, 221, 0.25)); flex-shrink: 0;">
+      <div class="hud-brand-title" style="display: flex; flex-direction: column; line-height: 1;">
+        <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.85rem; font-weight: 700; color: #1A1115; letter-spacing: -0.02em;">SACHIN SYSTEMS</span>
+        <span class="hud-brand-sub" style="font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; color: #0092DD; text-transform: uppercase; margin-top: 4px;">Houston &bull; Dubai DAFZA</span>
+      </div>
+    </a>
+
+    <div class="hud-actions-group" style="display: flex; align-items: center; gap: 0.75rem; pointer-events: auto;">
+      <button class="audio-toggle-btn" id="audio-toggle-btn" aria-label="Toggle atmospheric sound">
+        <div class="audio-equalizer">
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+        </div>
+        <span class="audio-label-txt">Sound Off</span>
+      </button>
+      <a href="#chapter-07" class="btn btn-primary btn-sm">Allocation Desk</a>
+    </div>
+  </header>
+
+  <!-- Bottom Fixed Bar: Chapter on Left, Scroll in Center, 3D Modes on Right -->
+  <nav class="hud-bottom-bar" aria-label="Navigation Controls" style="position: fixed; bottom: 0; left: 0; right: 0; width: 100%; box-sizing: border-box; padding: 1.5rem clamp(1.5rem, 3.5vw, 3rem); display: flex; justify-content: space-between; align-items: center; z-index: 1000; pointer-events: none;">
+    <div class="hud-chapter-pill" style="pointer-events: auto;">
+      <span class="badge-dot"></span>
+      <span id="hud-chapter-text">01 / THE FLIGHT</span>
+    </div>
+
+    <div class="hud-scroll-cue" style="pointer-events: auto;">
+      <a href="#chapter-02" class="scroll-indicator-wrap">
+        <span>Scroll to Explore</span>
+        <svg class="scroll-arrow-bounce" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M7 13l5 5 5-5M12 5v13"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hud-view-controls" style="display: flex; gap: 0.5rem; pointer-events: auto;">
+      <button class="view-mode-pill active" id="view-mode-flight">Flight Path</button>
+      <button class="view-mode-pill" id="view-mode-exploded">Exploded Hardware</button>
+      <button class="view-mode-pill" id="view-mode-scan">80-Pt Diagnostic</button>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       SCROLLABLE FOREGROUND CONTENT LAYER
+       ========================================================================== -->
+  <div class="content-layer">
+
+    <!-- CHAPTER 01: HERO / THE FLIGHT OF RECLAIMED TECH -->
+    <section class="chapter-section" id="chapter-01">
+      <div class="container">
+        <div class="hero-editorial-wrap">
+          <div class="eyebrow-badge">
+            <span class="badge-dot"></span>
+            Direct Carrier Auction Sourcing & Dubai Refurbishment
+          </div>
+          <h1 class="hero-editorial-title">
+            The flight of <em>reclaimed</em> technology.
+          </h1>
+          <p class="hero-editorial-desc">
+            We purchase raw, tested iPhone auction lots directly from AT&T, Verizon, and T-Mobile. In our Dubai cleanrooms, master technicians perform deep hardware micro-soldering and robotic diagnostics—delivering verified high-yield allocations to global B2B distributors.
+          </p>
+
+          <div class="hero-action-row">
+            <a href="#chapter-07" class="btn btn-primary btn-lg">Request Wholesale Allocation</a>
+            <a href="#chapter-03" class="btn btn-secondary btn-lg">Explore the Cleanroom</a>
+          </div>
+
+          <div class="hero-carrier-strip">
+            <span class="carrier-strip-label">Direct Upstream Ingestion:</span>
+            <div class="carrier-pills-group">
+              <span class="carrier-chip">T-Mobile Trade-In Auctions</span>
+              <span class="carrier-chip">Verizon Wireless Portfolios</span>
+              <span class="carrier-chip">AT&T Secondary Ingestion</span>
+              <span class="carrier-chip">PhoneCheck Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 02: THE INGESTION & TRACEABILITY -->
+    <section class="chapter-section" id="chapter-02">
+      <div class="container">
+        <div class="split-editorial-grid">
+          <div class="glass-panel">
+            <span class="text-eyebrow">Chapter 02 &bull; Upstream Sourcing</span>
+            <h2>Direct from the Carriers. No Intermediaries.</h2>
+            <p>
+              By participating directly in Tier-1 US operator liquidation auctions, Sachin Systems bypasses informal broker rings. Every pallet arrives in its raw, tested state with unadulterated motherboards and verified provenance.
+            </p>
+
+            <div class="metrics-row">
+              <div class="metric-item">
+                <div class="metric-big-num">500K+</div>
+                <div class="metric-label-txt">Annual Handsets Processed</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-big-num">99.2%</div>
+                <div class="metric-label-txt">Out-of-Box Functional Yield</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-big-num">100%</div>
+                <div class="metric-label-txt">Clean ESN / GSMA Verified</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- High-Impact Image Card -->
+          <div class="image-frame" style="height: 480px;">
+            <img src="assets/images/warehouse-cargo.jpg" alt="High-volume carrier pallet logistics warehouse" loading="lazy">
+            <div class="image-caption-badge">Houston Operations: Direct Carrier Pallet Intake</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 03: THE DUBAI CLEANROOM & DEEP HARDWARE RESTORATION -->
+    <section class="chapter-section" id="chapter-03">
+      <div class="container">
+        <div class="split-editorial-grid reverse">
+          <!-- Cleanroom Photography Card -->
+          <div class="image-frame" style="height: 520px;">
+            <img src="assets/images/cleanroom-lab.jpg" alt="Dubai technical cleanroom laboratory" loading="lazy">
+            <div class="image-caption-badge">Dubai Cleanroom: Micro-Soldering & Display Re-lamination</div>
+          </div>
+
+          <div class="glass-panel">
+            <span class="text-eyebrow" style="color:#E67818;">Chapter 03 &bull; Deep Hardware Refurbishment</span>
+            <h2>Micro-Soldering & Component-Level Precision</h2>
+            <p>
+              We don't merely buff glass. Our Dubai technicians specialize in micro-soldering logic board ICs, optical FaceID realignment, TrueTone re-calibration, and pristine display re-lamination in a certified dust-free cleanroom environment.
+            </p>
+
+            <div class="interactive-spec-checklist">
+              <div class="spec-check-item">
+                <div class="spec-check-icon">&#10003;</div>
+                <span>Logic Board Micro-Soldering (Audio & Power IC)</span>
+              </div>
+              <div class="spec-check-item">
+                <div class="spec-check-icon">&#10003;</div>
+                <span>Cleanroom Display Glass Re-Lamination</span>
+              </div>
+              <div class="spec-check-item">
+                <div class="spec-check-icon">&#10003;</div>
+                <span>TrueTone & FaceID Biometric Calibration</span>
+              </div>
+              <div class="spec-check-item">
+                <div class="spec-check-icon">&#10003;</div>
+                <span>Certified 100% Health High-Cycle Batteries</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <button class="btn btn-secondary btn-sm" onclick="document.getElementById('view-mode-exploded').click()">Inspect Exploded 3D View &rarr;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 04: PHONECHECK 80-POINT ROBOTIC VERIFICATION -->
+    <section class="chapter-section" id="chapter-04">
+      <div class="container">
+        <div class="split-editorial-grid">
+          <div class="glass-panel">
+            <span class="text-eyebrow">Chapter 04 &bull; Diagnostic Automation</span>
+            <h2>PhoneCheck 80-Point Automated Certification</h2>
+            <p>
+              Human eyes make errors; automated robotics do not. Every device is docked into PhoneCheck diagnostic racks to verify 80 distinct operational parameters before receiving its certified serialization badge.
+            </p>
+
+            <div class="interactive-spec-checklist" style="margin-top: 1.5rem;">
+              <div class="spec-check-item">
+                <div class="spec-check-icon">&#10003;</div>
+                <span>Multi-Touch Latency & Digitizer Uniformity</span>
+              </div>
+              <div class="spec-check-item">
+                <div class="spec-check-icon">&#10003;</div>
+                <span>5G mmWave & Sub-6GHz Baseband Modems</span>
+              </div>
+              <div class="spec-check-item">
+                <div class="spec-check-icon">&#10003;</div>
+                <span>Stereo Acoustics & Noise Cancellation Mics</span>
+              </div>
+              <div class="spec-check-item">
+                <div class="spec-check-icon">&#10003;</div>
+                <span>NIST 800-88 Cryptographic Data Erasure</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <button class="btn btn-secondary btn-sm" onclick="document.getElementById('view-mode-scan').click()">Trigger 3D Diagnostic Laser &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Circuit Board Macro Image Frame -->
+          <div class="image-frame" style="height: 480px;">
+            <img src="assets/images/circuit-board.jpg" alt="Automated microchip diagnostic testing" loading="lazy">
+            <div class="image-caption-badge">Robotic Diagnostics: Zero Non-OEM Warning Prompts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 05: WHOLESALE IPHONE ALLOCATION GALLERY & GRADING MATRIX -->
+    <section class="chapter-section" id="chapter-05">
+      <div class="container">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto;">
+          <span class="text-eyebrow">Chapter 05 &bull; Wholesale Inventory</span>
+          <h2>Flagship Allocations & Standardized Grades</h2>
+          <p>Consistent, repeatable cosmetic benchmarks eliminating broker ambiguity.</p>
+
+          <!-- Filter Pills -->
+          <div style="display: flex; gap: 0.5rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap;">
+            <button class="btn btn-secondary btn-sm catalog-filter-btn active" data-filter="all">All Series</button>
+            <button class="btn btn-secondary btn-sm catalog-filter-btn" data-filter="iphone-16">iPhone 16 Pro</button>
+            <button class="btn btn-secondary btn-sm catalog-filter-btn" data-filter="iphone-15">iPhone 15 Series</button>
+            <button class="btn btn-secondary btn-sm catalog-filter-btn" data-filter="iphone-14">iPhone 14 Series</button>
+          </div>
+        </div>
+
+        <!-- 3 Luxury Cards with Real Images -->
+        <div class="gallery-cards-grid">
+          <!-- Card 1 -->
+          <div class="iphone-lot-card" data-category="iphone-16">
+            <div class="lot-visual-thumb">
+              <img src="assets/images/iphone-titanium.jpg" alt="Apple iPhone 16 Pro Max Titanium">
+              <span class="lot-grade-pill cpo">Pristine CPO</span>
+            </div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.25rem;">iPhone 16 Pro / Pro Max</h3>
+            <p style="font-size: 0.86rem; color: var(--color-text-muted); margin-bottom: 1.25rem;">Natural & Black Titanium &bull; A18 Pro Chip</p>
+            <div style="font-size: 0.84rem; line-height: 1.7; margin-bottom: 1.5rem;">
+              <div><strong>Battery:</strong> 100% Brand New Certified Cell</div>
+              <div><strong>Display:</strong> Flawless OEM Oleophobic Finish</div>
+              <div><strong>Testing:</strong> PhoneCheck 80/80 Verified</div>
+              <div><strong>Lot Sizing:</strong> 25 &ndash; 500 units per order</div>
+            </div>
+            <a href="#chapter-07" class="btn btn-primary btn-sm" style="margin-top: auto;">Inquire on 16 Pro Lots</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="iphone-lot-card" data-category="iphone-15">
+            <div class="lot-visual-thumb">
+              <img src="assets/images/iphone-camera.jpg" alt="Apple iPhone 15 Pro Triple Lens Array">
+              <span class="lot-grade-pill">Grade A+</span>
+            </div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.25rem;">iPhone 15 / 15 Pro</h3>
+            <p style="font-size: 0.86rem; color: var(--color-text-muted); margin-bottom: 1.25rem;">USB-C Architecture &bull; Dynamic Island</p>
+            <div style="font-size: 0.84rem; line-height: 1.7; margin-bottom: 1.5rem;">
+              <div><strong>Battery:</strong> 85%+ Original or New Replacement</div>
+              <div><strong>Display:</strong> Zero Screen Scratches</div>
+              <div><strong>Testing:</strong> 100% Functional Bench Verified</div>
+              <div><strong>Lot Sizing:</strong> 50 &ndash; 1,000 units per order</div>
+            </div>
+            <a href="#chapter-07" class="btn btn-secondary btn-sm" style="margin-top: auto;">Inquire on 15 Lots</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="iphone-lot-card" data-category="iphone-14">
+            <div class="lot-visual-thumb">
+              <img src="assets/images/microsoldering.jpg" alt="Refurbished iPhone 14 Pro Motherboard">
+              <span class="lot-grade-pill">Grade A / B+</span>
+            </div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.25rem;">iPhone 14 Pro Max</h3>
+            <p style="font-size: 0.86rem; color: var(--color-text-muted); margin-bottom: 1.25rem;">Deep Hardware Reconditioned Lots</p>
+            <div style="font-size: 0.84rem; line-height: 1.7; margin-bottom: 1.5rem;">
+              <div><strong>Battery:</strong> 85%+ Capacity Tested</div>
+              <div><strong>Board:</strong> Cleanroom Tested & Micro-soldered</div>
+              <div><strong>Testing:</strong> PhoneCheck Full Pass</div>
+              <div><strong>Lot Sizing:</strong> 50 &ndash; 2,500 units per order</div>
+            </div>
+            <a href="#chapter-07" class="btn btn-secondary btn-sm" style="margin-top: auto;">Inquire on 14 Pro Max</a>
+          </div>
+        </div>
+
+        <!-- Pale Pink Grading Table -->
+        <div class="grading-table-container">
+          <table class="pink-table">
+            <thead>
+              <tr>
+                <th>Tier</th>
+                <th>Housing & Bezel</th>
+                <th>Display Screen</th>
+                <th>Battery Health</th>
+                <th>Hardware Integrity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Pristine CPO</strong></td>
+                <td>Zero cosmetic blemishes. Indistinguishable from new.</td>
+                <td>Flawless OEM glass with factory oleophobic coating.</td>
+                <td>100% (New Certified Cell)</td>
+                <td>100% OEM, TrueTone Active.</td>
+              </tr>
+              <tr>
+                <td><strong>Grade A+</strong></td>
+                <td>Pristine chassis; microscopic handling marks invisible at 20cm.</td>
+                <td>No visible scratches under direct lighting.</td>
+                <td>85% &ndash; 95% Original</td>
+                <td>PhoneCheck 80-pt certified, clean board.</td>
+              </tr>
+              <tr>
+                <td><strong>Grade A</strong></td>
+                <td>Faint surface scuffs on frame; zero metal dents or warping.</td>
+                <td>Faint hairline marks invisible when screen is powered on.</td>
+                <td>85%+ Original</td>
+                <td>Zero non-OEM software warnings.</td>
+              </tr>
+              <tr>
+                <td><strong>Grade B+ (Value)</strong></td>
+                <td>Moderate cosmetic edge wear; excellent margin driver.</td>
+                <td>Light scratches permissible; zero LCD bleeding or cracks.</td>
+                <td>80%+ Original</td>
+                <td>100% functional cameras, audio & FaceID.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 06: GLOBAL LOGISTICS BRIDGE & CIRCULAR ECONOMY -->
+    <section class="chapter-section" id="chapter-06">
+      <div class="container">
+        <div class="split-editorial-grid">
+          <div class="image-frame" style="height: 500px;">
+            <img src="assets/images/dubai-logistics.jpg" alt="Dubai Airport Freezone DAFZA aerial re-export terminal" loading="lazy">
+            <div class="image-caption-badge">Dubai DAFZA Hub: Tax-Free International Re-Export</div>
+          </div>
+
+          <div class="glass-panel">
+            <span class="text-eyebrow">Chapter 06 &bull; Global Dual Hubs</span>
+            <h2>Houston Headquarters & Dubai Airport Freezone</h2>
+            <p>
+              By combining domestic US intake in Houston with tax-free re-export from Dubai Airport Freezone (DAFZA), we eliminate customs friction and deliver air-cargo dispatches across 50+ countries.
+            </p>
+
+            <div class="hubs-interactive-grid">
+              <div class="hub-glass-card">
+                <div class="hub-card-title">Dubai Freezone (DAFZA)</div>
+                <p style="font-size:0.86rem; color:var(--color-text-body); line-height:1.5;">
+                  Warehouse #D20, Dubai Airport Freezone. Zero import duty hub servicing Europe, Middle East, Africa, and Asia with 24-hour air cargo turnarounds.
+                </p>
+              </div>
+              <div class="hub-glass-card">
+                <div class="hub-card-title">Houston, Texas (USA)</div>
+                <p style="font-size:0.86rem; color:var(--color-text-body); line-height:1.5;">
+                  8029 Almeda Rd, Houston, TX 77054. Ingestion hub handling North American carrier trade-in intake and domestic US wholesale shipments.
+                </p>
+              </div>
+            </div>
+
+            <!-- Circular Eco Card -->
+            <div style="margin-top: 1.5rem; padding: 1.25rem; background: rgba(255,255,255,0.65); border: 1px solid var(--color-border-hairline); border-radius: var(--radius-md);">
+              <strong style="color:var(--color-text-title); font-size:0.92rem;">R2 Certified Zero-Landfill Protocol:</strong>
+              <p style="font-size:0.84rem; margin-top:4px;">
+                78kg CO2e saved per refurbished iPhone. Unrepairable scrap components are sent strictly to audited R2 smelters for gold, copper, and rare-earth recovery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 07: B2B ALLOCATION QUOTE DESK -->
+    <section class="chapter-section" id="chapter-07">
+      <div class="container">
+        <div class="quote-desk-grid">
+          <div class="glass-panel">
+            <span class="text-eyebrow">Chapter 07 &bull; Allocation Desk</span>
+            <h2>Request Wholesale Allocations</h2>
+            <p style="margin-bottom: 2rem;">
+              Submit your required volume and SKU specifications. Daily uncommitted stock sheets and customized wholesale price tiers are dispatched on demand.
+            </p>
+
+            <div style="display:flex; flex-direction:column; gap:1.25rem;">
+              <div style="padding:1.25rem; background:rgba(255,255,255,0.7); border:1px solid var(--color-border-hairline); border-radius:var(--radius-md);">
+                <div style="font-weight:700; color:var(--color-text-title); font-size:0.92rem; margin-bottom:4px;">Dubai Trading Desk (DAFZA):</div>
+                <div style="font-size:0.84rem; color:var(--color-text-body); margin-bottom:8px;">Warehouse #D20, DAFZA, Dubai, UAE</div>
+                <a href="https://wa.me/971589543181?text=Hello%20Sachin%20Systems,%20inquiring%20about%20wholesale%20iPhone%20allocations." target="_blank" class="btn btn-primary btn-sm" style="background:#25D366; border-color:#25D366;">
+                  WhatsApp: +971 58 954 3181
+                </a>
+              </div>
+
+              <div style="padding:1.25rem; background:rgba(255,255,255,0.7); border:1px solid var(--color-border-hairline); border-radius:var(--radius-md);">
+                <div style="font-weight:700; color:var(--color-text-title); font-size:0.92rem; margin-bottom:4px;">Houston Operations Desk (USA):</div>
+                <div style="font-size:0.84rem; color:var(--color-text-body); margin-bottom:8px;">8029 Almeda Rd, Houston, TX 77054 USA</div>
+                <a href="https://wa.me/18329971034?text=Hello%20Sachin%20Systems%20USA,%20inquiring%20about%20wholesale%20inventory." target="_blank" class="btn btn-secondary btn-sm">
+                  WhatsApp: +1 (832) 997-1034
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- B2B Form Card -->
+          <div class="glass-panel">
+            <h3 style="font-size: 1.55rem; margin-bottom: 0.5rem;">B2B Wholesale Quotation</h3>
+            <p style="font-size: 0.88rem; margin-bottom: 1.5rem; color: var(--color-text-muted);">Direct factory supply &bull; MOQ from 25 units &bull; 100% Pre-Tested</p>
+
+            <form id="pink-b2b-quote-form" novalidate>
+              <div class="form-grid-duo">
+                <div class="form-field-group">
+                  <label class="pink-form-label" for="pink-company">Company Name *</label>
+                  <input type="text" id="pink-company" class="pink-form-input" placeholder="e.g. Apex Mobile Wholesale" required>
+                </div>
+                <div class="form-field-group">
+                  <label class="pink-form-label" for="pink-contact">Contact Name *</label>
+                  <input type="text" id="pink-contact" class="pink-form-input" placeholder="e.g. Sarah Jenkins" required>
+                </div>
+              </div>
+
+              <div class="form-grid-duo">
+                <div class="form-field-group">
+                  <label class="pink-form-label" for="pink-email">Corporate Email *</label>
+                  <input type="email" id="pink-email" class="pink-form-input" placeholder="sarah@apexmobile.com" required>
+                </div>
+                <div class="form-field-group">
+                  <label class="pink-form-label" for="pink-phone">Phone / WhatsApp *</label>
+                  <input type="tel" id="pink-phone" class="pink-form-input" placeholder="+1 (555) 019-2834" required>
+                </div>
+              </div>
+
+              <div class="form-grid-duo">
+                <div class="form-field-group">
+                  <label class="pink-form-label" for="pink-country">Country / Region *</label>
+                  <input type="text" id="pink-country" class="pink-form-input" placeholder="e.g. Germany / USA / UAE" required>
+                </div>
+                <div class="form-field-group">
+                  <label class="pink-form-label" for="pink-category">Target Category *</label>
+                  <select id="pink-category" class="pink-form-select" required>
+                    <option value="" disabled selected>Select Device Model</option>
+                    <option value="iPhone 16 Pro Series">iPhone 16 Pro / Pro Max Series</option>
+                    <option value="iPhone 15 Series">iPhone 15 Series (All models)</option>
+                    <option value="iPhone 14 Series">iPhone 14 Series (Pro & Standard)</option>
+                    <option value="Enterprise Mixed Volume">Enterprise Mixed Volume (iPhone 12 - 14)</option>
+                    <option value="Refurbishment Partnership">Supply / Refurbishment Partnership</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field-group">
+                <label class="pink-form-label" for="pink-volume">Estimated Monthly Volume *</label>
+                <select id="pink-volume" class="pink-form-select" required>
+                  <option value="" disabled selected>Select Allocation Volume</option>
+                  <option value="25 - 100 units (Sample / Trial Order)">25 &ndash; 100 units (Sample / Trial Order)</option>
+                  <option value="100 - 500 units / month">100 &ndash; 500 units / month</option>
+                  <option value="500 - 2,500 units / month">500 &ndash; 2,500 units / month</option>
+                  <option value="2,500+ units / month (Contract Allocation)">2,500+ units / month (Contract Allocation)</option>
+                </select>
+              </div>
+
+              <div class="form-field-group">
+                <label class="pink-form-label" for="pink-message">Grade & Delivery Notes</label>
+                <textarea id="pink-message" class="pink-form-textarea" placeholder="Specify preferred cosmetic grades (Pristine CPO vs Grade A), target delivery hub (Houston vs. Dubai), and carrier preference..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                Submit Wholesale Allocation Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 08: FAQ & ENTERPRISE FOOTER -->
+    <section class="chapter-section" id="chapter-08">
+      <div class="container">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto;">
+          <span class="text-eyebrow">Chapter 08 &bull; Transparency</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about our sourcing, refurbishment, and B2B terms.</p>
+        </div>
+
+        <div class="pink-faq-accordion">
+          <div class="pink-faq-item open">
+            <button class="pink-faq-trigger">
+              <span>Where do your used iPhones originate from?</span>
+              <span>+</span>
+            </button>
+            <div class="pink-faq-content">
+              All devices are procured directly through authorized carrier and vendor auctions from Tier-1 US operators (AT&T, Verizon, T-Mobile). We do not purchase unvetted grey-market stock. Every unit is screened to ensure 100% clean ESN and legal resale status.
+            </div>
+          </div>
+
+          <div class="pink-faq-item">
+            <button class="pink-faq-trigger">
+              <span>What specific repairs are performed in your Dubai cleanroom?</span>
+              <span>+</span>
+            </button>
+            <div class="pink-faq-content">
+              Our technicians perform deep hardware restoration: cleanroom display re-lamination, logic board micro-soldering (resolving audio IC, charging IC, and baseband issues), FaceID optical realignment, battery module renewal, and camera sensor stabilization.
+            </div>
+          </div>
+
+          <div class="pink-faq-item">
+            <button class="pink-faq-trigger">
+              <span>What is your Minimum Order Quantity (MOQ)?</span>
+              <span>+</span>
+            </button>
+            <div class="pink-faq-content">
+              For initial sample and verification orders, our MOQ starts at 25 units. For ongoing commercial wholesale allocations, standard tiers run from 100 to 2,500+ units per shipment.
+            </div>
+          </div>
+
+          <div class="pink-faq-item">
+            <button class="pink-faq-trigger">
+              <span>What is your warranty and RMA policy?</span>
+              <span>+</span>
+            </button>
+            <div class="pink-faq-content">
+              We stand behind our PhoneCheck certified grading with a strict 7-day inspection window from physical delivery. If any device fails functional verification, our team issues an authorized RMA number for immediate replacement or invoice credit.
+            </div>
+          </div>
+
+          <div class="pink-faq-item">
+            <button class="pink-faq-trigger">
+              <span>What are the payment and shipping terms?</span>
+              <span>+</span>
+            </button>
+            <div class="pink-faq-content">
+              Orders are dispatched under standard international wholesale terms: 100% upfront bank wire transfer before warehouse release. All shipments are FOB Warehouse (Houston, TX or DAFZA Dubai, UAE) with pre-shipment photo verification.
+            </div>
+          </div>
+        </div>
+
+        <!-- Luxury Enterprise Footer -->
+        <footer class="luxury-footer">
+          <div class="footer-inner-grid">
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1rem;">
+                <img src="assets/images/sachin-icon-transparent.png" alt="Sachin Systems Logo" style="height: 38px; width: 38px; object-fit: contain; flex-shrink: 0;">
+                <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.85rem; font-weight: 700; color: var(--color-text-title); letter-spacing: -0.02em; line-height: 1;">
+                  SACHIN SYSTEMS
+                </span>
+              </div>
+              <p style="font-size: 0.84rem; line-height: 1.5; margin-bottom: 1.25rem;">
+                R2 and ISO certified secondary mobile asset processor. Sourcing direct from US carrier auctions and supplying tested, high-yield refurbished iPhones worldwide.
+              </p>
+              <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+                <span class="eyebrow-badge">R2 Certified</span>
+                <span class="eyebrow-badge">ISO 14001</span>
+                <span class="eyebrow-badge">ISO 45001</span>
+                <span class="eyebrow-badge">PhoneCheck</span>
+              </div>
+            </div>
+
+            <div>
+              <div style="font-weight:700; text-transform:uppercase; font-size:0.78rem; letter-spacing:0.1em; color:var(--color-text-title); margin-bottom:1rem;">Operations</div>
+              <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.84rem;">
+                <a href="#chapter-02" style="color:var(--color-text-body); text-decoration:none;">Carrier Auction Intake</a>
+                <a href="#chapter-03" style="color:var(--color-text-body); text-decoration:none;">Dubai Cleanroom Lab</a>
+                <a href="#chapter-03" style="color:var(--color-text-body); text-decoration:none;">Board Micro-Soldering</a>
+                <a href="#chapter-04" style="color:var(--color-text-body); text-decoration:none;">PhoneCheck Testing</a>
+                <a href="#chapter-02" style="color:var(--color-text-body); text-decoration:none;">NIST Data Erasure</a>
+              </div>
+            </div>
+
+            <div>
+              <div style="font-weight:700; text-transform:uppercase; font-size:0.78rem; letter-spacing:0.1em; color:var(--color-text-title); margin-bottom:1rem;">Inventory</div>
+              <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.84rem;">
+                <a href="#chapter-05" style="color:var(--color-text-body); text-decoration:none;">iPhone 16 Pro Series</a>
+                <a href="#chapter-05" style="color:var(--color-text-body); text-decoration:none;">iPhone 15 Series</a>
+                <a href="#chapter-05" style="color:var(--color-text-body); text-decoration:none;">iPhone 14 Series</a>
+                <a href="#chapter-05" style="color:var(--color-text-body); text-decoration:none;">Grading Standards Table</a>
+                <a href="#chapter-07" style="color:var(--color-text-body); text-decoration:none;">Daily Stock Sheets</a>
+              </div>
+            </div>
+
+            <div>
+              <div style="font-weight:700; text-transform:uppercase; font-size:0.78rem; letter-spacing:0.1em; color:var(--color-text-title); margin-bottom:1rem;">Global Hubs</div>
+              <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.84rem;">
+                <a href="#chapter-06" style="color:var(--color-text-body); text-decoration:none;">Dubai DAFZA Hub (#D20)</a>
+                <a href="#chapter-06" style="color:var(--color-text-body); text-decoration:none;">Houston Headquarters</a>
+                <a href="#chapter-08" style="color:var(--color-text-body); text-decoration:none;">FOB Shipping Terms</a>
+                <a href="#chapter-08" style="color:var(--color-text-body); text-decoration:none;">7-Day RMA Conditions</a>
+                <a href="#chapter-07" style="color:var(--color-text-body); text-decoration:none;">Direct WhatsApp Desk</a>
+              </div>
+            </div>
+
+            <div>
+              <div style="font-weight:700; text-transform:uppercase; font-size:0.78rem; letter-spacing:0.1em; color:var(--color-text-title); margin-bottom:1rem;">Compliance</div>
+              <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.84rem;">
+                <a href="#chapter-06" style="color:var(--color-text-body); text-decoration:none;">R2 Environmental Protocol</a>
+                <a href="#chapter-06" style="color:var(--color-text-body); text-decoration:none;">Zero-Landfill Pledge</a>
+                <a href="#chapter-02" style="color:var(--color-text-body); text-decoration:none;">Clean ESN Guarantee</a>
+                <a href="#chapter-07" style="color:var(--color-text-body); text-decoration:none;">B2B Terms of Supply</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; font-size:0.8rem;">
+            <div>&copy; 2026 Sachin Systems Inc. All rights reserved. iPhone is a trademark of Apple Inc.</div>
+            <div style="display:flex; gap:1.25rem;">
+              <a href="#chapter-07" style="color:var(--color-text-muted); text-decoration:none;">Wholesale Terms</a>
+              <a href="#chapter-07" style="color:var(--color-text-muted); text-decoration:none;">Privacy Policy</a>
+              <a href="#chapter-08" style="color:var(--color-text-muted); text-decoration:none;">RMA Policy</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Scripts (Locally Bundled Three.js for 100% Reliable Offline Loading) -->
+  <script src="js/vendor/three.min.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
